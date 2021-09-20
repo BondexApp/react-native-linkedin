@@ -312,8 +312,6 @@ export default class LinkedInModal extends React.Component<Props, State> {
     if (renderButton) {
       return(
         <TouchableOpacity  
-        accessibilityComponentType={'button'}
-        accessibilityTraits={['button']}
         onPress={this.open}
         hitSlop={areaTouchText} 
         disabled={isDisabled}>
@@ -323,8 +321,6 @@ export default class LinkedInModal extends React.Component<Props, State> {
     }
     return (
       <TouchableOpacity
-        accessibilityComponentType={'button'}
-        accessibilityTraits={['button']}
         onPress={this.open}
         hitSlop={areaTouchText}
         disabled={isDisabled}
@@ -394,8 +390,6 @@ export default class LinkedInModal extends React.Component<Props, State> {
             <TouchableOpacity
               onPress={this.close}
               style={[styles.close, closeStyle]}
-              accessibilityComponentType={'button'}
-              accessibilityTraits={['button']}
             >
               {this.renderClose()}
             </TouchableOpacity>
